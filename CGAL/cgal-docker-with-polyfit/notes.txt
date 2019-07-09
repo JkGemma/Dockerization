@@ -1,0 +1,28 @@
+docker build -t upfactor/cgal:2.0 .
+
+docker run -v /home/gemma/Upfactor/Dockerization/CGAL/data:/data  -it --rm upfactor/cgal:2.0 bash
+
+/!\ DID NOT WORK RIGHT NOW /!\
+
+
+
+
+
+
+CMake Error at 3rd_QGLViewer-2.6.3/CMakeLists.txt:25 (find_package):
+  By not providing "FindQt5OpenGL.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "Qt5OpenGL", but CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5OpenGL" with
+  any of the following names:
+
+    Qt5OpenGLConfig.cmake
+    qt5opengl-config.cmake
+
+  Add the installation prefix of "Qt5OpenGL" to CMAKE_PREFIX_PATH or set
+  "Qt5OpenGL_DIR" to a directory containing one of the above files.  If
+  "Qt5OpenGL" provides a separate development package or SDK, be sure it has
+  been installed.
+
+-DQt5OpenGL_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5OpenGLExtensions/
