@@ -1,5 +1,5 @@
 FROM debian:buster-slim
-MAINTAINER m.jaouen@upfactor.fr
+MAINTAINER quentin.flayac@epitech.eu
 
 ENV CGAL_VERSION 4.13
 ENV HOME /CGAL-$CGAL_VERSION
